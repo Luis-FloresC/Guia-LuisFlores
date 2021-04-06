@@ -47,11 +47,13 @@ public class DatosGenerales {
     {
        try
       {   
-       System.out.println("| Numero de Identidad\t| Nombre\t| Direccion \t| Edad\t|");
+  
        for(DatosGenerales item : NewPerson)
        {
-         System.out.println("| " + item.DNI + "\t| " + item.NombreCompleto + " \t| " +
-                            item.Direccion + " \t| " + item.Edad + " \t|");
+          System.out.print("| Numero de Identidad: " + item.DNI + " | " +
+                           "Nombre: " + item.NombreCompleto + " | " +
+                           "Direccion: " + item.Direccion + " | " +
+                           "Edad: " + item.Edad + " años |\n\n");
        }
       }
       catch(Exception ex)

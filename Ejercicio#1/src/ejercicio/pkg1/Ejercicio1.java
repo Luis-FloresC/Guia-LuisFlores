@@ -36,7 +36,15 @@ public class Ejercicio1 {
             
              switch (opcion) {
                  case 1:
-                     Datos.IngresarDatosPersonales();
+                     
+                     while(opcion != 2)
+                     {
+                       Datos.IngresarDatosPersonales();
+                       System.out.println("Desea Continuar: 1.Si/2.No ");
+                       opcion = leer.nextInt();
+                       opcion = Datos.ValidarOpcion(opcion, 1, 2);
+                     }
+                     
                      break;
                  case 2:
                      Datos.MostrarDatos();
