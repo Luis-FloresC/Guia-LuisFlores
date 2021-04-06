@@ -16,6 +16,7 @@ package ejercicio.pkg1;
 
 import java.util.*;  
 
+
 public class DatosGenerales {
 
   private String NombreCompleto="";
@@ -64,8 +65,10 @@ public class DatosGenerales {
      
    }
     
-  public void IngresarDatos()
+  public void IngresarDatosPersonales()
   {        
+      try
+      {
        System.out.print("**** Datos Generales ****\n");
        System.out.print("Numero de Identidad: ");
        DNI = leer.next();
@@ -77,6 +80,11 @@ public class DatosGenerales {
        Edad = leer.nextInt();
        NewPerson.add(new DatosGenerales(NombreCompleto,DNI,Direccion,Edad));
        System.out.println("Datos Guardados con exito...");
+      }
+      catch(Exception ex)
+      {
+         System.out.print("Error: " + ex); 
+      }
   }
     
   
@@ -92,6 +100,7 @@ public class DatosGenerales {
       return valor;
   }
     
-    
+  
     
 }
+

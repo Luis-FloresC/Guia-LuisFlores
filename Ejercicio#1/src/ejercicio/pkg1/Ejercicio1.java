@@ -36,7 +36,7 @@ public class Ejercicio1 {
             
              switch (opcion) {
                  case 1:
-                     Datos.IngresarDatos();
+                     Datos.IngresarDatosPersonales();
                      break;
                  case 2:
                      Datos.MostrarDatos();
