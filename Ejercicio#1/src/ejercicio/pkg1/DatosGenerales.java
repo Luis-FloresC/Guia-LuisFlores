@@ -53,7 +53,7 @@ public class DatosGenerales {
           System.out.print("| Numero de Identidad: " + item.DNI + " | " +
                            "Nombre: " + item.NombreCompleto + " | " +
                            "Direccion: " + item.Direccion + " | " +
-                           "Edad: " + item.Edad + " años |\n\n");
+                           "Edad: " + item.Edad + " años |\n");
        }
       }
       catch(Exception ex)
